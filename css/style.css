@@ -4968,6 +4968,19 @@ a.badge:focus {
   color: inherit;
   background-color: #eee;
 }
+
+.diamante{
+    background: #A9E2F3
+  }
+
+.platino{
+    background: #D8D8D8
+  }
+
+.plata{
+  background: #FAFAFA
+}
+
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
