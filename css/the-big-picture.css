@@ -11,3 +11,12 @@ body {
   background-size: cover;
   -o-background-size: cover;
 }
+
+#codecamp
+{ 
+   background:url(images/codecamp.png) left top; 
+   width:16px; 
+   height:16px;
+   display: block;
+   float: left;
+}
