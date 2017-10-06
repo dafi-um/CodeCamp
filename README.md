@@ -1,3 +1,3 @@
-# CodeCamp-17
+# CodeCamp
 
 Credits to @bomobu
