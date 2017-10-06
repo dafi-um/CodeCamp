@@ -5774,4 +5774,12 @@ button.close {
         display:none!important
     }
 }
+
+#codecamp { 
+   background:url('../images/codecamp.png') left top; 
+   width:16px; 
+   height:16px;
+   display: block;
+   float: left;
+}
 /*# sourceMappingURL=bootstrap.min.css.map */
