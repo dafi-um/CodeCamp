@@ -14,7 +14,7 @@ body {
 
 #codecamp
 { 
-   background:url(images/codecamp.png) left top; 
+   background:url('../images/codecamp.png') left top; 
    width:16px; 
    height:16px;
    display: block;
