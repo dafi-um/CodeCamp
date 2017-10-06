@@ -1,116 +1,720 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]--><head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>CodeCamp 2018</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--main style-->
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
 
-  <head>
+<!--google font style-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
+<!--font-family: 'Open Sans', sans-serif;-->
+<!-- font css style-->
+<link rel="stylesheet" href="css/font-awesome.css">
+<!--for slider style-->
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Full Slider - Start Bootstrap Template</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/full-slider.css" rel="stylesheet">
-
-  </head>
-
-  <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
-              <p>This is a description for the first slide.</p>
-            </div>
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
-              <p>This is a description for the second slide.</p>
-            </div>
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
-              <p>This is a description for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header tocenter" style="width:100%; text-align:center">
+    	<a href="http://dafi.inf.um.es/CodeCamp/">
+        <img alt="codecamp" class="img-responsive center-block" src="images/codecamp-land.png" width="500">
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </header>
+<ol class="breadcrumb">
+  <li class="active"><a href="http://dafi.inf.um.es/CodeCamp/">Inicio</a></li>
+  <li><a href="#charlas">Charlas</a></li>
+  <li><a href="#horario">Horarios</a></li>
+  <li><a href="#ponentes">Ponentes</a></li>
+  <li><a href="#inscripcion">Inscripción</a></li>
+  <li><a href="#equipo">El equipo</a></li>
+  <li><a href="#contacto">Contacto</a></li>
+  <li><a href="#colabora">Colabora</a></li>
+</ol> 
+</div>
+</div>
+</nav>
+</head><body>
 
-    <!-- Page Content -->
-    <section class="py-5">
-      <div class="container">
-        <h1>Full Slider by Start Bootstrap</h1>
-        <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the
-          <code>full-slider.css</code>file.</p>
-      </div>
-    </section>
+<div class="container">
+<div class="col-md-12-e">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-      </div>
-      <!-- /.container -->
-    </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/slider/llamadacodecamp.png" class="img-responsive" alt="llama">
+    </div>
+    <div class="item">
+      <img src="images/slider/conectacodecamp.png" class="img-responsive" alt="laptop">
+    </div>
+    <div class="item">
+      <img src="images/slider/llamacodecamp.png" class="img-responsive" alt="flame">
+    </div>
+    <div class="item">
+      <img src="images/slider/cccodecamp.png" class="img-responsive" alt="share-networking">
+    </div>	  
+    </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+    	<div class="col-md-7">
+      <h2 class="featurette-heading">CodeCamp <span class="text-muted">| ¿Qué es?</span></h2>
+<p class="lead"> CodeCamp se diseña como un evento de tres días en el <b><a href="https://goo.gl/maps/CTU1tJa1LtT2" target="_blank">Albergue Juvenil de San Pedro del Pinatar</a>, del 17 al 19 de febrero,</b> en el cual se impartirán charlas, talleres y actividades. Estas actividades fomentarán la integración, dinámicas de grupo y se enfocarán en estrechar lazos comunes entre los asistentes a través de un mismo hilo conductor: <strong>la informática como profesión.</strong> Las charlas tendrán un fin didáctico complementario a cuestiones propias de la carrera.</p>
+      <p class="lead">Las distintas actividades propuestas versarán sobre cuestiones de seguridad, algoritmia, redes y sistemas operativos mediante distintas pruebas que deberán resolverse a través de un CTF (<i>Capture the Flag</i>) enfatizando así en la importancia del equipo para alcanzar un objetivo común.</p>	</div>
+	<div class="col-md-5">
+	<img class="featurette-image img-responsive center-block" src="images/codecamp.png" data-holder-rendered="true">
+	</div>
+	</div>
+ 	<hr class="featurette-divider">
+  <section id="charlas">
 
-  </body>
+    <h2 class="featurette-heading">Charlas</h2>
 
-</html>
+    <div class="panel panel-primary">
+  <div class="panel-heading">
+  	<table class="table">
+  	<tr>
+  	<th bgcolor="#337ab7">#</th>
+  	<th bgcolor="#337ab7">Charla</th>
+    <th bgcolor="#337ab7"></th>
+    <th bgcolor="#337ab7">Ponente</th>
+    </tr>
+  </table>
+  </div>
+
+  <table class="table">
+  <tr>
+    <th>#1</th>
+    <td>Destripando los gráficos de los videojuegos</td>
+    <td>Adrián Egea Comenge</td>
+    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+  </tr>
+  <tr>
+    <th>#2</th>
+    <td>3 retos imposibles</td>
+    <td>Juan Antonio Sánchez Laguna</td>
+    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+  </tr>
+  <tr>
+	<th>#3</th>
+    <td>Lo que sabe tu ordenador de ti</td>
+    <td>Lorenzo Fernández Maimó</td>
+    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+	  </tr>
+  <tr>
+	<th>#4</th>
+    <td>De ser un manco con Git a no saber cómo has podido vivir sin él</td>
+    <td>Ignacio García Soblechero</td>
+    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+  </tr>
+	  <tr>
+	<th>#5</th>
+    <td>¿Cómo funciona el cifrado de Whatsapp?</td>
+    <td>Leandro Marín Muñoz</td>
+    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+  </tr>
+	  <tr>
+	<th>#6</th>
+    <td>Modernización de software: ¿es posible rejuvenecer las aplicaciones?</td>
+    <td>Francisco Javier Bermúdez Ruiz</td>
+    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+  </tr>
+	  <tr>
+	<th>#7</th>
+    <td>Peritaje y pericia informáticos</td>
+    <td>Virginio García López</td>
+    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+  </tr>
+	  <tr>
+	<th>#8</th>
+    <td>Javascript, piedad; tengo mujer e hijos :/</td>
+    <td>Alberto López Sánchez</td>
+    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+  </tr>
+<tr>
+	<th>#9</th>
+    <td>Toolkit básico de hacking: introducción a Kali Linux </td>
+    <td>Luis Bernal</td>
+    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+  </tr>
+  </table>
+</div>
+</section>
+<hr class="featurette-divider">
+    <section id="horario">
+
+    <h2 class="featurette-heading">Horario</h2>
+<table class="table table-striped table-bordered table-sm table-responsive">
+<thead>
+<tr>
+    <th class="text-center">Horario (h)</th>
+    <th class="text-center">Viernes 17</th>
+    <th class="text-center">Sábado 18</th>
+    <th class="text-center">Domingo 19</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="text-center">8:30</td>
+    <td class="text-center" rowspan="42"></td>
+    <td class="text-center" rowspan="6">Desayuno</td>
+    <td class="text-center" rowspan="6">Desayuno</td>
+  </tr>
+  <tr>
+    <td class="text-center">8:40</td>
+  </tr>
+  <tr>
+    <td class="text-center">8:50</td>
+  </tr>
+  <tr>
+    <td class="text-center">9:00</td>
+  </tr>
+  <tr>
+    <td class="text-center">9:10</td>
+  </tr>
+  <tr>
+    <td class="text-center">9:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">9:30</td>
+    <td class="text-center" rowspan="6">"¿Cómo funciona el cifrado de Whatsapp?" <br> Leandro Marín Muñoz</td>
+    <td class="text-center" rowspan="9">"3 retos imposibles" <br> Juan Antonio Sánchez Laguna</td>
+  </tr>
+  <tr>
+    <td class="text-center">9:40</td>
+  </tr>
+  <tr>
+    <td class="text-center">9:50</td>
+  </tr>
+  <tr>
+    <td class="text-center">10:00</td>
+  </tr>
+  <tr>
+    <td class="text-center">10:10</td>
+  </tr>
+  <tr>
+    <td class="text-center">10:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">10:30</td>
+    <td class="text-center">Descanso</td>
+  </tr>
+  <tr>
+    <td class="text-center">10:40</td>
+    <td class="text-center" rowspan="6">"Peritaje y pericia informáticos" <br> Virginio García López</td>
+  </tr>
+  <tr>
+    <td class="text-center">10:50</td>
+  </tr>
+  <tr>
+    <td class="text-center">11:00</td>
+    <td class="text-center" rowspan="4">Tiempo libre: resolución Capture The Flag (CTF)</td>
+  </tr>
+  <tr>
+    <td class="text-center">11:10</td>
+  </tr>
+  <tr>
+    <td class="text-center">11:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">11:30</td>
+  </tr>
+  <tr>
+    <td class="text-center">11:40</td>
+    <td class="text-center" rowspan="3">Coffee Break</td>
+    <td class="text-center" rowspan="3">Coffee Break</td>
+  </tr>
+  <tr>
+    <td class="text-center">11:50</td>
+  </tr>
+  <tr>
+    <td class="text-center">12:00</td>
+  </tr>
+  <tr>
+    <td class="text-center">12:10</td>
+    <td class="text-center" rowspan="5">"Destripando los gráficos de los videojuegos" <br> Adrián Egea Comenge</td>
+    <td class="text-center" rowspan="10">Tiempo libre: resolución Capture The Flag (CTF)</td>
+  </tr>
+  <tr>
+    <td class="text-center">12:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">12:30</td>
+  </tr>
+  <tr>
+    <td class="text-center">12:40</td>
+  </tr>
+  <tr>
+    <td class="text-center">12:50</td>
+  </tr>
+  <tr>
+    <td class="text-center">13:00</td>
+    <td class="text-center">Descanso</td>
+  </tr>
+  <tr>
+    <td class="text-center">13:10</td>
+    <td class="text-center" rowspan="5">"Javascript, piedad; tengo mujer e hijos :/" <br> Alberto López Sánchez</td>
+  </tr>
+  <tr>
+    <td class="text-center">13:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">13:30</td>
+  </tr>
+  <tr>
+    <td class="text-center">13:40</td>
+  </tr>
+  <tr>
+    <td class="text-center">13:50</td>
+    <td class="text-center">Fin Capture The Flag (CTF)</td>
+  </tr>
+  <tr>
+    <td class="text-center">14:00</td>
+    <td class="text-center" rowspan="10">Comida</td>
+    <td class="text-center" rowspan="10">Comida</td>
+  </tr>
+  <tr>
+    <td class="text-center">14:10</td>
+  </tr>
+  <tr>
+    <td class="text-center">14:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">14:30</td>
+  </tr>
+  <tr>
+    <td class="text-center">14:40</td>
+  </tr>
+  <tr>
+    <td class="text-center">14:50</td>
+  </tr>
+  <tr>
+    <td class="text-center">15:00</td>
+  </tr>
+  <tr>
+    <td class="text-center">15:10</td>
+  </tr>
+  <tr>
+    <td class="text-center">15:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">15:30</td>
+    <td class="text-center">Recogida: Facultad de Informática</td>
+  </tr>
+  <tr>
+    <td class="text-center">15:40</td>
+    <td class="text-center">Desplazamiento en autobús</td>
+    <td class="text-center" rowspan="2">Descanso</td>
+    <td class="text-center" rowspan="2">Descanso</td>
+  </tr>
+  <tr>
+    <td class="text-center">15:50</td>
+    <td class="text-center">Recogida: Murcia</td>
+  </tr>
+  <tr>
+    <td class="text-center">16:00</td>
+    <td class="text-center" rowspan="6">Desplazamiento en autobús</td>
+    <td class="text-center" rowspan="5">"Modernización de software: ¿es posible rejuvenecer las aplicaciones?" <br> Francisco Javier Bermúdez Ruiz</td>
+    <td class="text-center" rowspan="3">Kahoot</td>
+  </tr>
+  <tr>
+    <td class="text-center">16:10</td>
+  </tr>
+  <tr>
+    <td class="text-center">16:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">16:30</td>
+    <td class="text-center" rowspan="3">Entrega de premios</td>
+  </tr>
+  <tr>
+    <td class="text-center">16:40</td>
+  </tr>
+  <tr>
+    <td class="text-center">16:50</td>
+    <td class="text-center">Descanso</td>
+  </tr>
+  <tr>
+    <td class="text-center">17:00</td>
+    <td class="text-center" rowspan="3">Check-in</td>
+    <td class="text-center" rowspan="6">"Lo que sabe tu ordenador de ti" <br> Lorenzo Fernández Maimó</td>
+    <td class="text-center" rowspan="3">Acto de clausura</td>
+  </tr>
+  <tr>
+    <td class="text-center">17:10</td>
+  </tr>
+  <tr>
+    <td class="text-center">17:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">17:30</td>
+    <td class="text-center" rowspan="6">Acto de apertura</td>
+    <td class="text-center" rowspan="3">Check-out</td>
+  </tr>
+  <tr>
+    <td class="text-center" >17:40</td>
+  </tr>
+  <tr>
+    <td class="text-center">17:50</td>
+  </tr>
+  <tr>
+    <td class="text-center">18:00</td>
+    <td class="text-center" rowspan="3">Coffee Break</td>
+    <td class="text-center" rowspan="6">Desplazamiento en autobús</td>
+  </tr>
+  <tr>
+    <td class="text-center">18:10</td>
+  </tr>
+  <tr>
+    <td class="text-center">18:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">18:30</td>
+    <td class="text-center">Descanso</td>
+    <td class="text-center" rowspan="15">Tiempo libre: resolución Capture The Flag (CTF)</td>
+  </tr>
+  <tr>
+    <td class="text-center">18:40</td>
+    <td class="text-center" rowspan="7">"Toolkit básico de hacking: introducción a Kali Linux" <br> Luis Bernal Escobedo</td>
+  </tr>
+  <tr>
+    <td class="text-center">18:50</td>
+  </tr>
+  <tr>
+    <td class="text-center">19:00</td>
+    <td class="text-center">Parada: Murcia</td>
+  </tr>
+  <tr>
+    <td class="text-center">19:10</td>
+    <td class="text-center">Desplazamiento en autobús</td>
+  </tr>
+  <tr>
+    <td class="text-center">19:20</td>
+    <td class="text-center">Parada: Facultad de Informática</td>
+  </tr>
+  <tr>
+    <td class="text-center">19:30</td>
+    <td class="text-center" rowspan="25"></td>
+  </tr>
+  <tr>
+    <td class="text-center">19:40</td>
+  </tr>
+  <tr>
+    <td class="text-center">19:50</td>
+    <td class="text-center">Descanso</td>
+  </tr>
+  <tr>
+    <td class="text-center">20:00</td>
+    <td class="text-center" rowspan="6">"De ser un manco con Git a no saber cómo has podido vivir sin él" <br> Ignacio García Soblechero</td>
+  </tr>
+  <tr>
+    <td class="text-center">20:10</td>
+  </tr>
+  <tr>
+    <td class="text-center">20:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">20:30</td>
+  </tr>
+  <tr>
+    <td class="text-center">20:40</td>
+  </tr>
+  <tr>
+    <td class="text-center">20:50</td>
+  </tr>
+  <tr>
+    <td class="text-center">21:00</td>
+    <td class="text-center" rowspan="6">Cena</td>
+    <td class="text-center" rowspan="6">Cena</td>
+  </tr>
+  <tr>
+    <td class="text-center">21:10</td>
+  </tr>
+  <tr>
+    <td class="text-center">21:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">21:30</td>
+  </tr>
+  <tr>
+    <td class="text-center">21:40</td>
+  </tr>
+  <tr>
+    <td class="text-center">21:50</td>
+  </tr>
+  <tr>
+    <td class="text-center">22:00</td>
+    <td class="text-center" rowspan="4">Descanso</td>
+    <td class="text-center" rowspan="4">Descanso</td>
+  </tr>
+  <tr>
+    <td class="text-center">22:10</td>
+  </tr>
+  <tr>
+    <td class="text-center">22:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">22:30</td>
+  </tr>
+  <tr>
+    <td class="text-center">22:40</td>
+    <td class="text-center" rowspan="6">Actividades</td>
+    <td class="text-center" rowspan="6">Actividades</td>
+  </tr>
+  <tr>
+    <td class="text-center">22:50</td>
+  </tr>
+  <tr>
+    <td class="text-center">23:00</td>
+  </tr>
+  <tr>
+    <td class="text-center">23:10</td>
+  </tr>
+  <tr>
+    <td class="text-center">23:20</td>
+  </tr>
+  <tr>
+    <td class="text-center">23:30</td>
+  </tr>
+</tbody>
+</table>
+  
+</section> 
+ <hr class="featurette-divider">
+<section id="ponentes">
+      <h2 class="featurette-heading">Ponentes</h2>
+<div class="row">
+      <div class="col-lg-3">
+      <img class="img-circle img-responsive" src="images/ponentes/adrian.jpg" alt="Adrián Egea">
+        <h3>Adrián Egea Comenge</h3>
+</div>
+      <div class="col-lg-3">
+      <img class="img-circle img-responsive" src="images/ponentes/lorenzo.jpg" alt="Lorenzo Fernández">
+        <h3>Lorenzo Fernández Maimó</h3>
+    </div>
+      <div class="col-lg-3">
+      <img class="img-circle img-responsive" src="images/ponentes/laguna.jpg" alt="Juan Antonio Sánchez Laguna">
+        <h3>Juan Antonio Sánchez Laguna</h3>
+    </div>
+<div class="col-lg-3">
+      <img class="img-circle img-responsive" src="images/ponentes/soblechero.jpg" alt="Ignacio García Soblechero">
+        <h3>Ignacio García Soblechero</h3>
+    </div>
+<div class="col-lg-3">
+      <img class="img-circle img-responsive" src="images/ponentes/leandro.jpg" alt="Leandro Marín Muñoz">
+        <h3>Leandro Marín Muñoz</h3>
+    </div>
+<div class="col-lg-3">
+      <img class="img-circle img-responsive" src="images/ponentes/fjbr.png" alt="Francisco Javier Bermúdez Ruiz">
+        <h3>Francisco Javier Bermúdez Ruiz</h3>
+    </div>
+<div class="col-lg-3">
+      <img class="img-circle img-responsive" src="images/ponentes/virginio.jpg" alt="Virginio García López">
+        <h3>Virginio García López</h3>
+</div>
+<div class="col-lg-3">
+      <img class="img-circle img-responsive" src="images/ponentes/alberto-lopez-1.jpg" alt="Alberto López Sánchez">
+        <h3>Alberto López Sánchez</h3>
+    </div>
+<div class="col-lg-3 col-md-offset-3">
+      <img class="img-circle img-responsive" src="images/ponentes/lbernal.jpg" alt="Luis Bernal">
+        <h3>Luis Bernal (n0p)</h3>
+    </div>
+    </div>
+</section>
+    <hr class="featurette-divider">
+<section id="inscripcion">
+      <h2 class="featurette-heading">Inscripción</h2>
+<div class="panel panel-default">
+  <div class="panel-body">
+<h4><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> [Actualizado a 21/11/2016] Antes de lanzar la inscripción estamos recogiendo opiniones, ¡ayúdanos y participa rellenando esta encuesta!</h4>
+<h5><a href="https://docs.google.com/forms/d/e/1FAIpQLSfzVcZracNrZLhgVkj6GNt5YQoT9dhC2FGqRTbNaKBiW8RTug/viewform?c=0&w=1" target="_blank">Cumplimentar encuesta</a></h5>
+<h4><span class="glyphicon glyphicon-check" aria-hidden="true"></span> [Actualizado a 12/12/2016] Abierto el plazo de inscripciones</h4>
+<h5><a href="https://docs.google.com/forms/d/e/1FAIpQLSeg-M2uoJYonpDaDvn7HYVdO64iHImu2wcJbC_qL_SdryKkCA/viewform?c=0&w=1" target="_blank">Cumplimentar formulario</a></h5>
+<h4 class="text-muted"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> [Actualizado a 12/12/2016 15:28:39] ¿Quieres ganar una entrada gratis? ¡Resuelve el reto!</h4>
+<h5 class="text-muted"><a href="http://dafi.inf.um.es/CodeCamp/entrada-gratis/" target="_blank">Ver reto</a></h5>
+<h4 class="text-success"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> [Actualizado a 12/12/2016 16:15:26] Reto superado</h4>
+<h4><span class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></span> [Actualizado a 18/01/2017] ¡Cerramos inscripciones!</h4>
+	</div>
+</div>
+</section>
+    <hr class="featurette-divider">
+<section id="equipo">
+      <h2 class="featurette-heading">El equipo</h2>
+<div class="row">
+      <div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/alicia.jpg" alt="Alicia Ruiz">
+        <h2>Alicia Ruiz</h2>
+        <p><a href="https://twitter.com/aliciaruto" target="_blank" class="btn btn-primary" role="button">@AliciaRuTo</a></p>
+    </div>
+  <div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/borja.jpg" alt="Borja Moreno">
+        <h2>Borja Moreno</h2>
+        <p><a href="https://twitter.com/bomobu" target="_blank" class="btn btn-primary" role="button">@bomobu</a></p>
+    </div>
+      <div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/eduardo-ingles.jpg" alt="Eduardo Inglés">
+        <h2>Eduardo Inglés</h2>
+        <p><a href="https://twitter.com/edusucina" target="_blank" class="btn btn-primary" role="button">@edusucina</a></p>
+    </div>
+    <div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/elena.jpg" alt="Elena Valcárcel">
+        <h2>Elena Valcárcel-Resalt</h2>
+        <p><a href="https://twitter.com/Elenarbol" target="_blank" class="btn btn-primary" role="button">@Elenarbol</a></p>
+    </div>
+   <div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/val.jpg" alt="Valentin Kivachuk">
+        <h2>Valentin Kivachuk</h2>
+        <p><a href="https://twitter.com/vk496" target="_blank" class="btn btn-primary" role="button">@vk496</a></p>
+    </div>
+          <div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/aitana.jpg" alt="Aitana Molina">
+        <h2>Aitana Molina</h2>
+        <p><a href="https://twitter.com/aimoor_" target="_blank" class="btn btn-primary" role="button">@aimoor_</a></p>
+    </div>
+          <div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/sita.jpg" alt="Sita Pascual de Riquelme">
+        <h2>Sita Pascual del Riquelme</h2>
+        <p><a href="https://twitter.com/sitapascual" target=" img-responsive_blank" class="btn btn-primary" role="button">@sitapascual</a></p>
+    </div>
+          <div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/mj.jpg" alt="María José Navarro">
+        <h2>María José Navarro</h2>
+        <p><a href="https://twitter.com/MJ_NM93" target="_bla img-responsive" class="btn btn-primary" role="button">@MJ_NM93</a></p>
+    </div>
+          <div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/lufis.jpg" alt="Carlos Fernández ">
+        <h2>Carlos Fernández</h2>
+        <p><a href="https://twitter.com/lufis93" target="_bla img-responsive" class="btn btn-primary" role="button">@lufis93</a></p>
+    </div>
+	<div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/mati.jpg" alt="Maria Teresa Moreno Boluda">
+        <h2>María Teresa Moreno Boluda</h2>
+</div>
+	<div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/mar.png" alt="Mar Canovas Garcia">
+        <h2>Mar Cánovas García</h2>
+        <p><a href="https://twitter.com/maricharcop" target="_bla img-responsive" class="btn btn-primary" role="button">@maricharcop</a></p>
+    </div>
+	<div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/joaquin.jpg" alt="Joaquín Brotons Candela">
+        <h2>Joaquín Brotons Candela</h2>
+        <p><a href="https://twitter.com/brotons22" target="_bla img-responsive" class="btn btn-primary" role="button">@brotons22</a></p>
+    </div>
+	<div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/javier.jpg" alt="Javier Moreno Fernández">
+        <h2>Javier Moreno Fernández</h2>
+        <p><a href="https://twitter.com/SmoleSA" target="_bla img-responsive" class="btn btn-primary" role="button">@SmoleSA</a></p>
+    </div>
+	<div class="col-lg-4">
+      <img class="img-circle img-responsive" src="images/equipo/jesus.jpg" alt="Jesús Carrasco Martínez">
+        <h2>Jesús Carrasco Martínez</h2>
+        <p><a href="https://twitter.com/sau8719" target="_bla img-responsive" class="btn btn-primary" role="button">@sau8719</a></p>
+    </div>
+    </div>
+</section>
+    <hr class="featurette-divider">
+<section id="contacto">
+<div class="jumbotron">
+  <div class="span12 text-center"><h2><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></h2></div>
+
+  <h2>Si necesitas contactar con nosotros, ¡éste es tu sitio! :-) </h2>
+  <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Correo: <a href="mailto:codecampmurcia@gmail.com">codecampmurcia@gmail.com</a></p>
+  <p><span class="glyphicon glyphicon-share" aria-hidden="true"></span> Twitter: <a href="https://twitter.com/codecampmurcia">@codecampmurcia</a></p>
+  <p>Otros contactos...</p>
+  <p><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Telegram: <a href="https://telegram.me/AliciaRuTo" target="_blank">@AliciaRuTo</a> y <a href="https://telegram.me/bomobu" target="_blank">@bomobu</a></p>
+    <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:infomun@um.es">infomun@um.es</a></p>
+</div>
+</section>
+<!--    <hr class="featurette-divider">
+<section id="localizacion">
+	      <h3 class="featurette-heading">Localización del albergue:</h3>
+		  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.707567904941!2d-0.7728746851421936!3d37.843731379747005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd630f9ed6d5ba71%3A0x3ad173ac19e2b76a!2sALBERGUE+JUVENIL+SAN+PEDRO+DEL+PINATAR!5e0!3m2!1ses!2ses!4v1486037306601" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+	</section>-->
+    <hr class="featurette-divider">
+<section id="organiza">
+      <h3 class="featurette-heading">Organiza:</h3>
+<div class="row">
+<div class="col-lg-6">
+	      <a href="http://infomun.org/" target="_blank"><img class="img-responsive" src="images/logo-infomun.png" alt="Logo Infomun - Asocación Juvenil de Estudiantes de la Facultad de Informática"></a>
+    </div>
+</div>
+</section>
+    <hr class="featurette-divider">
+<section id="colabora">
+      <h3 class="featurette-heading">Colaboran:</h3>
+	<div class="jumbotron platino" id="platino">
+	<div class="span12 text-center"><h2>Platino</h2></div>
+	<a href="https://www.es.capgemini.com" target="_blank"><img class="img-responsive center-block" src="images/colabora/capgemini.png" alt="Logo Capgemini" width="40%"></a>
+	<br>
+	<div class="span12 text-center"><p>Con más de 180.000 empleados presentes en más de 40 países, Capgemini es un líder global en consultoría, tecnología y outsourcing del mundo. El Grupo Capgemini alcanzó unos ingresos globales de 11.900 millones de euros en 2015. Capgemini, en colaboración con sus clientes, crea y proporciona las soluciones tecnológicas, digitales y de negocio que mejor se ajustan a sus necesidades y que les permiten alcanzar innovación y competitividad. Siendo una organización profundamente multicultural, Capgemini ha desarrollado su propia forma de trabajar, la <a href="https://www.capgemini.com/about/how-we-work/the-collaborative-business-experiencetm" target="_blank">Collaborative Business Experience &trade;</a>, basada en su modelo de producción <a href="https://www.capgemini.com/about/how-we-work/rightshorer" target="_blank">Rightshore &reg;</a> <br><br>
+		Para más información: <a href="https://www.es.capgemini.com/" target="_blank">www.es.capgemini.com</a>.
+	<br></p>
+	<div class="span12 text-left"><h4><i>Rightshore &reg; es una marca registrada perteneciente a Capgemini</i></h4></div>
+	</div>
+			</div>
+	<div class="jumbotron diamante" id="diamante">
+		  <div class="span12 text-center"><h2>Diamante</h2></div>
+	<a href="http://www.inforges.es/?utm_source=codecamp&utm_medium=banner&utm_campaign=codecamp17" target="_blank"><img class="img-responsive center-block" src="images/colabora/inforges.png" alt="Logo Inforges" width="40%"></a>
+	<br>
+	<div class="span12 text-center"><p><strong>“Personas, Procesos, Tecnología y Comunicación”.</strong> Con cerca de 200 empleados, Inforges cuenta con un equipo multilingüe acostumbrado a procesos de implantación en diferentes países, más de 1.500 proyectos en todo el mundo, una metodología propia de implantación, alianzas con los fabricantes de referencia a nivel internacional (Microsoft, SAP, IBM,…), proyectos que se adecúan a las necesidades reales de las empresas y un fuerte compromiso con la mejora continua de sus soluciones, así como con el crecimiento de sus profesionales. <strong>Tenemos la experiencia y contamos con las personas: “Inforges es una empresa donde podrás desarrollar todo tu potencial personal y profesional”.</strong> <a href="http://www.inforges.es?utm_source=codecamp&utm_medium=link&utm_campaign=codecamp17" target="_blank">www.inforges.es</a>.</p></div>
+	</div>
+	<div class="jumbotron plata" id="plata">
+		  <div class="span12 text-center"><h2>Plata</h2></div><br>
+	<a href="http://www.visualtis.com/" target="_blank"><img class="img-responsive center-block" src="images/colabora/visualtis.png" alt="Logo Visualtis" width="40%"></a>
+	<br>
+	<div class="span12 text-center"><p>Somos una empresa con más de 10 años de experiencia en el sector de las tecnologías de la información y la comunicación, llevamos desde 2005 ayudando a nuestros clientes a rentabilizar su inversión en software. Ayudamos a plantear y ejecutar soluciones innovadoras para nuestros clientes, analizando los elementos clave y realizando un diagnóstico eficaz con las mejores herramientas. Desarrollamos cualquier tipo de proyecto web, aplicaciones móviles para iOS y Android, aplicaciones de gestión, sistemas, implantación y gestión de dispositivos IoT… Si tienes un proyecto tecnológico y no sabes como afrontarlo, no dudes en visitarnos, disponemos de la metodología y de los recursos necesarios para hacer crecer y madurar tu idea.<a href="http://www.visualtis.com/" target="_blank"> www.visualtis.com</a>.</p></div>
+	</div>
+<div class="row">
+<div class="col-lg-2">
+	<img class="img-responsive" src="images/logo-dafi.png" alt="Logo DAFI - Delegación de Alumnos de la Facultad de Informática">
+</div>
+<div class="col-lg-2">
+      <img class="img-responsive" src="images/colabora/logo-um.png" alt="Vicerrectorado de Estudiantes">
+    </div>
+	<div class="col-lg-2">
+      <img class="img-responsive" src="images/colabora/logo-fium.png" alt="Facultad de Informática">
+    </div>
+	<div class="col-lg-2">
+      <img class="img-responsive" src="images/colabora/ceum.jpg" alt="CEUM - Consejo de Estudiantes de la Universidad de Murcia">
+    </div>
+    <div class="col-lg-2">
+      <img class="img-responsive" src="images/colabora/logo MLP corporativo.jpg" alt="Logo MurciaLANPARTY">
+    </div>
+    <div class="col-lg-2">
+      <img class="img-responsive" src="images/colabora/logo_EM.png" alt="Logo Electrónica Martínez">
+    </div>
+    <div class="col-lg-2">
+      <img class="img-responsive" src="images/colabora/sanpedro.jpg" width="50%" alt="Logo Ayuntamiento San Pedro del Pinatar - Murcia">
+    </div>
+</div>
+
+</section>
+    <hr class="featurette-divider">
+  </div>
+</div>
+<div id="wrap">
+  <div id="main" class="container clear-top">
+  <h5><span class="label label-primary">2016</span> <i>"Las organizaciones gastan millones de dólares en firewalls y dispositivos de seguridad, pero tiran el dinero porque ninguna de estas medidas cubre el eslabón más débil de la cadena de seguridad: la gente que usa y administra los ordenadores"</i>  -- Kevin Mitnick</h5>
+  </div>
+</div>
+<footer class="footer"></footer>
+</body></html>
