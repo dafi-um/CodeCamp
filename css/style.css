@@ -4978,7 +4978,8 @@ a.badge:focus {
   }
 
 .oro{
-    background: #FAF285;
+  /* #FAF285 */
+    background: #ECE582;
   }
 
 .plata{
