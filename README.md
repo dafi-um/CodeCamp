@@ -1,3 +1,0 @@
-# CodeCamp
-
-Credits to @bomobu
